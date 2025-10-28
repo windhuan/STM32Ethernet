@@ -128,7 +128,7 @@ int EthernetClass::maintain()
  */
 void EthernetClass::schedule(void)
 {
-  stm32_eth_scheduler();
+  _stm32_eth_scheduler();
 }
 
 void EthernetClass::setMACAddress(const uint8_t *mac_address)

@@ -247,7 +247,7 @@ void stm32_eth_init(const uint8_t *mac, const uint8_t *ip, const uint8_t *gw, co
 
   if (!initDone) {
     // stm32_eth_scheduler() will be called every 1ms.
-    TIM_scheduler_Config();
+    //TIM_scheduler_Config();
     initDone = 1;
   }
 

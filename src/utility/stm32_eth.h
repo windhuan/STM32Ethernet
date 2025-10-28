@@ -123,7 +123,7 @@ void stm32_eth_get_macaddr(uint8_t *mac);
 void stm32_eth_set_macaddr(const uint8_t *mac);
 uint8_t stm32_eth_link_up(void);
 void stm32_eth_scheduler(void);
-
+void _stm32_eth_scheduler(void);
 void User_notification(struct netif *netif);
 
 #if LWIP_DHCP
