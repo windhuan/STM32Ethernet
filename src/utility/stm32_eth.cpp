@@ -305,9 +305,10 @@ uint8_t stm32_eth_link_up(void)
   */
 void stm32_eth_scheduler(void)
 {
-  if (EthTim != NULL) {
-    EthTim->refresh();
-  }
+  //if (EthTim != NULL) {
+  //  EthTim->refresh();
+  //}
+  _stm32_eth_scheduler();
 }
 
 /**
